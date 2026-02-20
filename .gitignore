@@ -1,0 +1,15 @@
+# macOS hidden files
+.DS_Store
+
+# Swift/Xcode build artifacts
+build/
+DerivedData/
+.swiftpm/
+.build/
+
+# Package Manager folders
+Packages/
+.conan/.DS_Store
+project.xcworkspace/
+xcuserdata/
+DSAPreperation/LeetCode/.DS_Store
