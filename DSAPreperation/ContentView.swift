@@ -17,9 +17,8 @@ struct ContentView: View {
         }
         .padding()
         .onAppear {
-            //print(BestTimeToBuyAndSellStock121().maxProfit([7,1,5,3,6,4]))
             print("----------")
-            print(BinaryWatch401().readBinaryWatch(3))
+            print(PrimeNumberOfSetBitsInBinaryRepresentation762().countPrimeSetBits(6, 10))
         }
     }
 }
