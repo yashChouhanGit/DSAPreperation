@@ -18,7 +18,7 @@ struct ContentView: View {
         .padding()
         .onAppear {
             print("----------")
-            print(PrimeNumberOfSetBitsInBinaryRepresentation762().countPrimeSetBits(6, 10))
+            print(BinaryGap868().binaryGap(22))
         }
     }
 }
