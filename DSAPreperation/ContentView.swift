@@ -18,7 +18,7 @@ struct ContentView: View {
         .padding()
         .onAppear {
             print("----------")
-            print(BinaryGap868().binaryGap(22))
+            print(CheckIfAStringContainsAllBinaryCodesOfSizeK1461().hasAllCodes("1111", 2))
         }
     }
 }
