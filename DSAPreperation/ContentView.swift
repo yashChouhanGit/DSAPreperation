@@ -18,7 +18,6 @@ struct ContentView: View {
         .padding()
         .onAppear {
             print("----------")
-            print(CheckIfAStringContainsAllBinaryCodesOfSizeK1461().hasAllCodes("1111", 2))
         }
     }
 }
