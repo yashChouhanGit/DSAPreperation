@@ -46,18 +46,22 @@ class SumOfRootToLeafBinaryNumbers1022 {
     
     
     func sumRootToLeaf(_ root: TreeNode?) -> Int {
+        return dfs(root, 0)
+    }
+    
+    private func dfs(_ node: TreeNode?, _ currentSum: Int) -> Int {
+        // 1. Base case: If the node is empty
+        guard let node = node else { return 0 }
         
-        (root?.val ?? 0) + (root?.left?.val ?? 0) + (root?.right?.val ?? 0) + (root?.left?.left?.val ?? 0) + (root?.right?.right?.val ?? 0)
+        // 2. The Formula: Shift left and add the current bit
+        let nextSum = (currentSum << 1) | node.val
         
+        // 3. If it's a leaf node, we've finished one binary number
+        if node.left == nil && node.right == nil {
+            return nextSum
+        }
         
-        var count = 0
-        let rootVal = root?.val ?? 0
-        let leftVal = root?.left?.val ?? 0
-        let rightVal = root?.right?.val ?? 0
-        
-        sum = sum = (1 << count) * rootVal
-        
-        
-        
+        // 4. Otherwise, keep going down left and right and sum them up
+        return dfs(node.left, nextSum) + dfs(node.right, nextSum)
     }
 }
