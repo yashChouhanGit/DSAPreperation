@@ -18,7 +18,9 @@ struct ContentView: View {
         .padding()
         .onAppear {
             print("----------")
-            print(TwoSum1().twoSum([3,2,4], 7))
+            var num = [0,1,0,3,12]
+            MoveZeroes283().moveZeroes(&num)
+            print(num)
         }
     }
 }
