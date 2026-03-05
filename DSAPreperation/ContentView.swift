@@ -18,9 +18,13 @@ struct ContentView: View {
         .padding()
         .onAppear {
             print("----------")
-            var num = [0,1,0,3,12]
-            MoveZeroes283().moveZeroes(&num)
-            print(num)
+            //var num = [0,1,0,3,12]
+            //var num = [2,1]
+
+           // let valid = ValidPalindrome125().isPalindrome("A man, a plan, a canal: Panama")
+            let valid = ValidPalindrome125().isPalindrome("0P")
+
+            print(valid)
         }
     }
 }

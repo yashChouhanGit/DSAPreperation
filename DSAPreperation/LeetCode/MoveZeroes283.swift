@@ -8,27 +8,28 @@
 
 class MoveZeroes283 {
     // ordinary
-    func moveZeroes(_ nums: inout [Int]) {
-        var arrayNonZero: [Int] = []
-        var arrayZero: [Int] = []
-        for i in 0..<nums.count {
-            if nums[i] == 0 {
-                arrayZero.append(0)
-            } else {
-                arrayNonZero.append(nums[i])
-            }
-        }
-        nums = arrayNonZero + arrayZero
-    }
-    
 //    func moveZeroes(_ nums: inout [Int]) {
-//        var index = 0
+//        var arrayNonZero: [Int] = []
+//        var arrayZero: [Int] = []
 //        for i in 0..<nums.count {
-//            if nums[i] != 0, i != index {
-//                nums.insert(nums[i], at: index)
-//                nums[i] = 0
-//                index += 1
+//            if nums[i] == 0 {
+//                arrayZero.append(0)
+//            } else {
+//                arrayNonZero.append(nums[i])
 //            }
 //        }
+//        nums = arrayNonZero + arrayZero
 //    }
+    
+    func moveZeroes(_ nums: inout [Int]) {
+        var index = 0
+        for i in 0..<nums.count {
+            if nums[i] != 0, i != index , i != 0 {
+                let temp = nums[i]
+                nums[i] = 0
+                nums[index] = temp
+                index += 1
+            }
+        }
+    }
 }
