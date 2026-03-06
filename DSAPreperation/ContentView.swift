@@ -22,7 +22,7 @@ struct ContentView: View {
             //var num = [2,1]
 
            // let valid = ValidPalindrome125().isPalindrome("A man, a plan, a canal: Panama")
-            let valid = ValidPalindrome125().isPalindrome("0P")
+            let valid = SingleNumber136().singleNumber([4,1,2,1,2])
 
             print(valid)
         }
