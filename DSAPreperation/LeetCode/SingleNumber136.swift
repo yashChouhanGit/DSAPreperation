@@ -22,11 +22,15 @@ class SingleNumber136 {
 //        return dict.first?.key ?? 0
 //    }
     
+//    func singleNumber(_ nums: [Int]) -> Int {
+//        var sum = 0
+//        for num in nums {
+//            sum = sum ^ num
+//        }
+//        return sum
+//    }
+    
     func singleNumber(_ nums: [Int]) -> Int {
-        var sum = 0
-        for num in nums {
-            sum = sum ^ num
-        }
-        return sum
+        return nums.reduce(0, ^)
     }
 }
