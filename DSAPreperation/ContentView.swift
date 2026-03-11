@@ -22,7 +22,11 @@ struct ContentView: View {
             //var num = [2,1]
 
            // let valid = ValidPalindrome125().isPalindrome("A man, a plan, a canal: Panama")
-            let valid = SingleNumber136().singleNumber([4,1,2,1,2])
+            
+            let input = [1,2,3,1]
+            let target = 9
+
+            let valid = containsDuplicate(input: input)
 
             print(valid)
         }
