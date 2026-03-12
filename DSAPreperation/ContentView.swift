@@ -18,17 +18,6 @@ struct ContentView: View {
         .padding()
         .onAppear {
             print("----------")
-            //var num = [0,1,0,3,12]
-            //var num = [2,1]
-
-           // let valid = ValidPalindrome125().isPalindrome("A man, a plan, a canal: Panama")
-            
-            let input = [1,2,3,1]
-            let target = 9
-
-            let valid = containsDuplicate(input: input)
-
-            print(valid)
         }
     }
 }
