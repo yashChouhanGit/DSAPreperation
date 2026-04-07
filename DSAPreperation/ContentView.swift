@@ -18,6 +18,8 @@ struct ContentView: View {
         .padding()
         .onAppear {
             print("----------")
+            let value = NeetCode150().twoSum([1,2,3,4], 3)
+            print("value \(value)")
         }
     }
 }
