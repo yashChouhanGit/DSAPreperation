@@ -18,7 +18,7 @@ struct ContentView: View {
         .padding()
         .onAppear {
             print("----------")
-            let value = NeetCode150().twoSum160([-1,-2,-3,-4,-5].reversed(), -8)
+            let value = NeetCode150().topKFrequent([1,2,2,3,3,3], 2)
             print("----------\(value)")
         }
     }
