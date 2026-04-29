@@ -18,8 +18,12 @@ struct ContentView: View {
         .padding()
         .onAppear {
             print("----------")
-            let value = NeetCode150().topKFrequent([1,0,0,3,3,3], 2)
+            let value = NeetCode150().encode(["i",""])
             print("----------\(value)")
+
+            let value1 = NeetCode150().decode(value)
+            
+            print("----------\(value1)")
         }
     }
 }
