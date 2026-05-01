@@ -18,12 +18,10 @@ struct ContentView: View {
         .padding()
         .onAppear {
             print("----------")
-            let value = NeetCode150().encode(["i",""])
+            let value = NeetCode150().productExceptSelf([1,2,3,4])
             print("----------\(value)")
 
-            let value1 = NeetCode150().decode(value)
-            
-            print("----------\(value1)")
+           
         }
     }
 }
