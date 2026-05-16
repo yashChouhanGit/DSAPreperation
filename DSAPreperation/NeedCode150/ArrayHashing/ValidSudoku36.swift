@@ -1,5 +1,5 @@
 //
-//  isValidSudoku95.swift
+//  ValidSudoku36.swift
 //  DSAPreperation
 //
 //  Created by Yash Chouhan on 14/05/26.
